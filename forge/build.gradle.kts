@@ -46,6 +46,7 @@ tasks.processResources {
     filesMatching("META-INF/mods.toml") {
         expand(
             mapOf(
+                "author" to project.property("author"),
                 "mod_name" to project.property("mod_name"),
                 "mod_id" to project.property("mod_id"),
                 "version" to project.property("mod_version"),
